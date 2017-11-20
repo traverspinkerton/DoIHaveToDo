@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#todo-list {
+	width: 70%;
+	margin: auto;
+}
+
+.todo {
+  text-align: left;
+  border: 1px solid black;
+  border-bottom: none;
+}
+
+
+#todo-list:last-child {
+  border-bottom: 1px solid black;
+}
