@@ -1,13 +1,10 @@
 import React from 'react';
 import Todo from './Todo';
 
-export default function TodoList(props) {
+export default function TodoList({todos, handleTodoDelete, handleStatusChange}) {
 	return (
 		<div id="todo-list">
-			<Todo task='Mow the Lawn' />
-			<Todo task='Clean Gutters' />
-			<Todo task='Pick up leaves' />
-			<Todo task='Edge Lawn' />
+			{todos.map(todo => <Todo key={todo.task} task={todo.task} handleTodoDelete={handleTodoDelete} handleStatusChange={handleStatusChange} /> )}
 		</div>
 	);
 }
