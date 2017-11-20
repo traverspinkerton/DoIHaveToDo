@@ -10,6 +10,7 @@ body {
 }
 
 .todo {
+  padding: 1em;
   text-align: left;
   border: 1px solid black;
   border-bottom: none;
@@ -18,4 +19,13 @@ body {
 
 #todo-list:last-child {
   border-bottom: 1px solid black;
+}
+
+.task {
+	display: inline;
+}
+
+input:checked + p {
+	text-decoration: line-through;
+	color: grey; 
 }
